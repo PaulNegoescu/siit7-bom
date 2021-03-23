@@ -1,0 +1,23 @@
+:root {
+  --dark-background: #333;
+  --dark-color: #ccc;
+  --light-background: #fff;
+  --light-color: #333;
+}
+
+body {
+  background-color: var(--dark-background);
+  color: var(--dark-color);
+}
+
+@media screen and (prefers-color-scheme: light) {
+  body {
+    background-color: var(--light-background);
+    color: var(--light-color);
+  }
+}
+
+.color-theme-light {
+  background-color: var(--light-background);
+  color: var(--light-color);
+}
